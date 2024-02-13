@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/produto.css">
+    <title>Tela de Produto</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+    
+          <div class="nav1">
+    
+            <div class="hamburguer">
+              <div class="line" id="line1"></div>
+              <div class="line" id="line2"></div>
+              <div class="line" id="line3"></div>
+            </div>
+    
+            <aside class="sidebar">
+              <ol class="menu">
+                <li><a href="./alimentacao.html">Alimentação</a></li>
+                <li><a href="./higiene.html">Higiene</a></li>
+                <li><a href="./brinquedos.html">Brinquedos</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./agendamento.html">Agendamento</a></li>
+                <li><a href="./pets.html">Seus pets</a></li>
+              </ol>
+            </aside>
+    
+            <a href="../index.html" class="logo">PETHEAVEN</a>
+    
+            <div class="barradepesquisar">
+              <img src="../imgs/lupa.svg" alt="lupa">
+              <input type="text" placeholder="Search" class="pesquisar">
+            </div>
+    
+            <div id="botao-carrinho">
+              <span class="nomezinho">Seu Carrinho</span><img src="../imgs/carrinho.svg" alt="carrinho">
+            </div>
+    
+            <aside id="carrinho">
+              <div class="sinalizacao"></div>
+              <h1>PETHEAVEN</h1>
+
+          
+              <ul class="menu">
+                  <li>
+                    <div class="iconvoltar">
+                    <a href="../index.html" target="_blank">
+                      
+                    </a>
+                  </div>
+                          <div class="produto-carrinho">
+                              <div class="img-produto">
+                                  <img class="foto" src="../imgs/Alimentação/Racao-Golden-Para-Gatos-Adultos-Castrados-Sabor-Salmao.jpg" alt="">
+                              </div>
+                    
+                          <div class="info-carrinho">
+                              <h4 class="titulo-carrinho">Ração Golden para Gatos</h4>
+                              <div class="valores">
+                                  <h3>R$ <span class="valor-un-carrinho">65,00</span></h3>
+                              </div>
+                              <h3>Un: 
+                                  <button class="btn-quantidade" onclick="decrementQuantity(this)">-</button>
+                                  <input class="qtdd-item" type="number" min="0" value="1">
+                                  <button class="btn-quantidadee" onclick="incrementQuantity(this)">+</button>
+                              </h3>
+                          </div>
+                          <div class="remove-item" onclick="removeItem(this)">
+                            <img src="../imgs/remove-item.svg" alt="">
+                        </div>
+                        </div>
+    
+                        <div class="produto-carrinho">
+                              <div class="img-produto">
+                                  <img src="../imgs/Higiene/Banho-a-Seco-Pet-Society-Fast-Shower-para-Caes-e-Gatos.jpg" alt="">
+                              </div>
+                          </a>
+                          <div class="info-carrinho">
+                              <h4 class="titulo-carrinho">Spray Secante para gatos</h4>
+                              <div class="valores">
+                                  <h3>R$ <span class="valor-un-carrinho">45.00</span></h3>
+                              </div>
+                              <h3>Un: 
+                                  <button class="btn-quantidade" onclick="decrementQuantity(this)">-</button>
+                                  <input class="qtdd-item" type="number" min="0" value="1">
+                                  <button class="btn-quantidadee" onclick="incrementQuantity(this)">+</button>
+                              </h3>
+                          </div>
+                          <div class="remove-item">
+                              <img src="../imgs/remove-item.svg" alt="">
+                          </div>
+                        </div>
+    
+                        </li>
+                  </li>
+          
+          
+              </ul>
+          
+              <div class="botao">
+                  <h2>Valor total: R$ <span class="valor-total">110,00</span></h2>
+                  <a href="./html/formasdepagamento.html" class="finalizar">Finalizar Compra</a>
+              </div>
+        
+          </aside>
+    
+            <div class="conta">
+              <a href="./usuario.html"><span class="nomezinho">Sua Conta</span><img src="../imgs/conta.svg" alt="conta"></a>
+            </div>
+    
+            <div id="segunda" class="barradepesquisar">
+              <img src="../imgs/lupa.svg" alt="lupa">
+              <input type="text" placeholder="Search" class="pesquisar">
+            </div>
+    
+          </div>
+    
+          <div class="nav2">
+            <ol>
+              <li><a href="./alimentacao.html">Alimentação</a></li>
+              <li><a href="./higiene.html">Higiene</a></li>
+              <li><a href="./brinquedos.html">Brinquedos</a></li>
+              <li><a href="./servicos.html">Serviços</a></li>
+              <li><a href="./agendamento.html">Agendamento</a></li>
+              <li><a href="./pets.html">Seus pets</a></li>
+            </ol>
+          </div>
+        </nav>
+      </header>
+
+    
+
+    <main>
+        <section class="produto-escolhido">
+
+            <div class="produto-img">
+                <img src="../imgs/Alimentação/Racao-Golden-Formula-Light-Para-Caes-Adultos.jpg" alt="">
+            </div>
+            <div class="produto-descricao">
+                <h1>Ração Golden Light</h1>
+                <p>Para proporcionar uma nutrição completa e balanceada ao seu companheiro de quatro patas, é fundamental servir alimentos repletos de nutrientes e vitaminas essenciais para seu desenvolvimento. Por isso, a ração Golden Light 15 kg é uma excelente escolha!</p>
+                <div class="footer-descricao">
+                    <span class="valor">R$ 175,00</span>
+                    <span onclick="mostrarCarrinho()" class="addcarrinho">ADICIONAR AO CARRINHO</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../javascript/script.js"></script>
+</body>
+
+</html>

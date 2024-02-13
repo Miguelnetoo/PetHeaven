@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <title>Tela Pagamento</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav1">
+                <a href="../html/formasdepagamento.html" class="logo1">◀Voltar</a>
+                <a href="../index.html" class="logo">PETHEAVEN</a>
+                <a href=""><span class="nomezinho"></span><img src="../imgs/conta.svg" alt="conta"></a>
+            </div>
+            </div>
+
+        </nav>
+    </header> 
+
+    <div class="container">
+        <a href="../html/formasdepagamento.html" class="voltar-link">◀Voltar</a>
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Endereço de entrega</h3>
+                    <div class="inputBox">
+                        <span>Nome completo:</span>
+                        <input type="text" placeholder="...">
+                    </div>
+                    <div class="inputBox">
+                        <span>Rua:</span>
+                        <input type="text" placeholder="...">
+                    </div>
+                    <div class="inputBox">
+                        <span>Cidade:</span>
+                        <input type="text" placeholder="...">
+                    </div>
+                    <div class="flex">
+                        
+                        <div class="inputBox">
+                            <span>Cep:</span>
+                            <input type="text" placeholder="...">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Pagamento</h3>
+                    <div class="inputBox">
+                        <span>Cartões aceitos:</span>
+                        <img src="../imgs/icons-global/payment-options.webp" alt="...">
+                    </div>
+                    <div class="inputBox">
+                        <span>Nome no cartão:</span>
+                        <input type="text" placeholder="...">
+                    </div>
+                    <div class="inputBox">
+                        <span>Número do Cartão:</span>
+                        <input type="number" placeholder="...">
+                    </div>
+                   
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Ano validade:</span>
+                            <input type="number" placeholder="00/00">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV:</span>
+                            <input type="text" placeholder="000">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="submit" value="Finalizar a compra" class="sunmit-btn">
+        </form>
+    </div>
+    <script src="../javascript/pagamento.js"></script>
+</body>
+</html>

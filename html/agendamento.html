@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/agendamento.css">
+  <title>Agendamento</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+
+      <div class="nav1">
+
+        <div class="hamburguer">
+          <div class="line" id="line1"></div>
+          <div class="line" id="line2"></div>
+          <div class="line" id="line3"></div>
+        </div>
+
+        <aside class="sidebar">
+          <ol class="menu">
+            <li><a href="./alimentacao.html">Alimentação</a></li>
+            <li><a href="./higiene.html">Higiene</a></li>
+            <li><a href="./brinquedos.html">Brinquedos</a></li>
+            <li><a href="./servicos.html">Serviços</a></li>
+            <li><a href="./agendamento.html">Agendamento</a></li>
+            <li><a href="./pets.html">Seus pets</a></li>
+          </ol>
+        </aside>
+
+        <a href="../index.html" class="logo">PETHEAVEN</a>
+
+        <div class="barradepesquisar">
+          <img src="../imgs/lupa.svg" alt="lupa">
+          <input type="text" placeholder="Search" class="pesquisar">
+        </div>
+
+        <div id="botao-carrinho">
+          <span class="nomezinho">Seu Carrinho</span><img src="../imgs/carrinho.svg" alt="carrinho">
+        </div>
+
+        <aside id="carrinho">
+            <div class="sinalizacao"></div>
+            <h1>PETHEAVEN</h1>
+        
+            <ul class="menu">
+                <li>
+                  <div class="iconvoltar">
+                  <a href="./index.html" target="_blank">
+                    
+                  </a>
+                </div>
+                        <div class="produto-carrinho">
+                            <div class="img-produto">
+                                <img src="../imgs/Alimentação/Racao-Golden-Para-Gatos-Adultos-Castrados-Sabor-Salmao.jpg" alt="">
+                            </div>
+                  
+                        <div class="info-carrinho">
+                            <h4 class="titulo-carrinho">Ração Golden para Gatos</h4>
+                            <div class="valores">
+                                <h3>R$ <span class="valor-un-carrinho">65,00</span></h3>
+                            </div>
+                            <h3>Un: 
+                                <button class="btn-quantidade" onclick="decrementQuantity(this)">-</button>
+                                <input class="qtdd-item" type="number" min="0" value="1">
+                                <button class="btn-quantidadee" onclick="incrementQuantity(this)">+</button>
+                            </h3>
+                        </div>
+                        <div class="remove-item">
+                            <img src="../imgs/remove-item.svg" alt="">
+                        </div>
+                      </div>
+
+                      <div class="produto-carrinho">
+                            <div class="img-produto">
+                                <img src="../imgs/Higiene/Banho-a-Seco-Pet-Society-Fast-Shower-para-Caes-e-Gatos.jpg" alt="">
+                            </div>
+                        </a>
+                        <div class="info-carrinho">
+                            <h4 class="titulo-carrinho">Spray Secante para gatos</h4>
+                            <div class="valores">
+                                <h3>R$ <span class="valor-un-carrinho">45.00</span></h3>
+                            </div>
+                            <h3>Un: 
+                                <button class="btn-quantidade" onclick="decrementQuantity(this)">-</button>
+                                <input class="qtdd-item" type="number" min="0" value="1">
+                                <button class="btn-quantidadee" onclick="incrementQuantity(this)">+</button>
+                            </h3>
+                        </div>
+                        <div class="remove-item">
+                            <img src="../imgs/remove-item.svg" alt="">
+                        </div>
+                      </div>
+
+                      </li>
+                </li>
+        
+        
+            </ul>
+        
+            <div class="botao">
+                <h2>Valor total: R$ <span class="valor-total">110,00</span></h2>
+                <a href="./formasdepagamento.html" class="finalizar">Finalizar Compra</a>
+            </div>
+      
+        </aside>
+
+        <div class="conta">
+          <a href="./usuario.html"><span class="nomezinho">Sua Conta</span><img src="../imgs/conta.svg" alt="conta"></a>
+        </div>
+
+        <div id="segunda" class="barradepesquisar">
+          <img src="../imgs/lupa.svg" alt="lupa">
+          <input type="text" placeholder="Search" class="pesquisar">
+        </div>
+
+      </div>
+
+      <div class="nav2">
+        <ol>
+          <li><a href="./alimentacao.html">Alimentação</a></li>
+          <li><a href="./higiene.html">Higiene</a></li>
+          <li><a href="./brinquedos.html">Brinquedos</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="./agendamento.html">Agendamento</a></li>
+          <li><a href="./pets.html">Seus pets</a></li>
+        </ol>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    
+    <div class="container">
+      <div class="calendar">
+        <div class="header">
+          <div class="month">July 2021</div>
+          <div class="btns">
+            <!-- today -->
+            <div class="btn today">
+              <i class="fas fa-calendar-day"></i>
+            </div>
+            <!-- previous month -->
+            <div class="btn prev">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <!-- next month -->
+            <div class="btn next">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="weekdays">
+          <div class="day">Sun</div>
+          <div class="day">Mon</div>
+          <div class="day">Tue</div>
+          <div class="day">Wed</div>
+          <div class="day">Thu</div>
+          <div class="day">Fri</div>
+          <div class="day">Sat</div>
+        </div>
+        <div class="days">
+          <!-- render days with js -->
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="infooter">
+      
+      <section class="redes-sociais">
+        <h1>PETHEAVEN</h1>
+        <p>Indo até você, para você</p>
+        <div class="faixa-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </section>
+      
+      <section class="institucional">
+        <span>Institucional</span>
+        <ul>
+          <li><a href="#">Sobre PetHeaven</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+          <li><a href="#">Canal de Denúncias</a></li>
+          <li><a href="#">Relações de Investidores</a></li>
+        </ul>
+      </section>
+
+      <section class="politicas">
+        <span>Nossas políticas</span>
+        <ul>
+          <li><a href="#">Entrega e Frete</a></li>
+          <li><a href="#">Pagamentos e Reembolso</a></li>
+          <li><a href="#">Trocas e Devolução</a></li>
+          <li><a href="#">Campanhas e Promoções</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </section>
+
+      <section class="atendimento">
+        <span>Atendimento PetHeaven</span>
+        <ul>
+          <li><a href="#">Meus Pedidos</a></li>
+          <li><a href="#">Meu Cadastro</a></li>
+          <li><a href="#">Minhas Assinaturas</a></li>
+          <li><a href="#">Fale Conosco</a></li>
+          <li><a href="#">Ouvidoria</a></li>
+        </ul>
+      </section>
+
+    </div>
+
+    <div class="faixa-final">
+      <img src="../imgs/icons-global/payment-options.webp" id="cartoes">
+      <p>&copy 2023 PetHeaven | Todos os direitos reservados.</p>
+    </div>
+
+  </footer>
+  <script src="../javascript/script.js"></script>
+</body>
+
+</html>
