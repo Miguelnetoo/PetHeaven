@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+main {
+    margin-top: 2rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.produto-escolhido {
+    display: flex;
+    background: #3D30A2;
+    width: 1200px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 1px 600px 300px black;
+}
+
+
+.produto-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.produto-img img {
+    border-radius: 50px;
+    width: auto;
+    height: 75%;
+    margin-left: 50px;
+}
+
+.produto-descricao {
+    display: grid;
+    grid-template-rows: 70px 300px 70px;
+    align-self: center;
+    justify-items: center;
+    padding: 20px;
+    color: whitesmoke;
+
+}
+.produto-descricao h1 {
+    font-size: 3rem;
+}
+
+.produto-descricao p {
+    font-size: 1.5rem;
+}
+
+.footer-descricao {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.valor {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    font-size: 1.5rem;
+}
+.addcarrinho {
+    display: grid;
+    align-items: center;
+    padding: 10px;
+    border-radius: 15px;
+    background: #FFFB73;
+    font-weight: 700;
+    color: black;
+    cursor: pointer;
+}
+
+.addcarrinho:hover {
+    background: rgba(255, 251, 115, 0.8);
+}
+
+
+@media screen and (max-width: 1050px) {
+    .produto-img img {
+        width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .produto-descricao p{
+        font-size: 0px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .produto-descricao h1{
+        font-size: 30px;
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .produto-descricao span{
+        font-size: 12px;
+        margin-top: -130px;
+        margin-bottom: 130px;
+    }
+}
+
+
+

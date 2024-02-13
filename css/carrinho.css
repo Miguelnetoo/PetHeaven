@@ -1,0 +1,140 @@
+body{
+	background: #F6F5FA;
+}
+h2 {
+	color: #F6F5FA;
+}
+
+.container {
+	background: #B15EFF;
+}
+.voltar {
+	text-decoration: none;
+	color: #F6F5FA;
+	text-align: left;
+}
+.cart{
+	margin: 10px 0;
+	background-color: #F6F5FA;;
+	padding: 30px 0;
+}
+.total-price{
+	padding-bottom: 15px;
+}
+.cart-item{
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+}
+.center-item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.cart-item img{
+	width: 115px;
+}
+.cart-item h5{
+    padding: 0 45px;
+}
+.cart-item .remove-item{
+	width: 25px!important;
+}
+.btn-default{
+	background-color: #fff;
+}
+.cart-item .form-control{
+	background-color: #F6F5FA;
+	border: none;
+    width: 65px;
+    border-radius: 10px!important;
+    font-weight: 700;
+    font-size: 20px;
+}
+.input-group{
+	width: unset;
+	flex-wrap: nowrap;
+}
+.status{
+	text-align: right;
+}
+.check-out{
+    float: right;
+    padding: 10px 30px;
+	font-size: 19px;
+	background-color: #3d30a2;
+	border: none;
+}
+
+.nav1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 30px;
+	background-color: #3d30a2;
+  }
+  
+  .carrinho {
+	padding: 4px 4px;
+  }
+  
+  .carrinho a {
+	display: flex;
+	color: whitesmoke;
+	text-decoration: none;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  .carrinho:hover {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 4px 4px;
+  }
+  
+  .conta {
+	padding: 4px 4px;
+  }
+  
+  .conta a {
+	display: flex;
+	color: whitesmoke;
+	text-decoration: none;
+	align-items: center;
+	gap: 10px;
+  }
+  
+  .conta:hover {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 4px 4px;
+  }
+  
+  .logo {
+	font-family: 'Irish Grover';
+	letter-spacing: 2px;
+	font-size: 3rem;
+	display: flex;
+	align-self: center;
+	text-decoration: none;
+	color: whitesmoke;
+  }
+  .barradepesquisar {
+    display: none;
+  }
+	.voltar:hover {
+	background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+	padding: 4px 4px;
+  }
+  input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}

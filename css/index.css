@@ -1,0 +1,651 @@
+main {
+  margin-top: 6.6rem;
+} 
+ .banner {
+  background: #3d30a2;
+  width: 100%;
+  height: 428px;
+ }
+
+ .banner img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  overflow: clip;
+  object-fit: cover;
+ }
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.planos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 3rem;
+    color: #3d30a2;
+}
+
+/* AGENDAMENTO */
+
+.roxinho {
+    margin-top: 7rem;
+    display: grid;
+    max-width: 100%;
+}
+
+.fundo-roxo {
+    background: #B15EFF;
+    width: 100%;
+    height: 50rem;
+}
+
+.roxinho img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.roxinho #down {
+    margin-bottom: 20px;
+}
+
+.roxinho h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 6rem;
+    letter-spacing: 2px;
+}
+
+.roxinho #calendario {
+    width: 500px;
+    height: 500px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.grid {
+    margin-top: 100px;
+    width: 500px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.grid p {
+    color: whitesmoke;
+    font-size: 1.8rem;
+}
+
+.grid a {
+    margin-top: 40px;
+    width: 300px;
+    text-decoration: none;
+    color: whitesmoke;
+    background: #3d30a2;
+    padding: 12px 32px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    align-content: center;
+}
+
+.grid a:hover {
+    background: rgba(61, 48, 162, 0.8);
+}
+
+
+
+/* -------------------------------CARDS------------------------------------- */
+.card {
+    width: 200px;
+    height: 300px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+   }
+   
+   .card-img {
+   /* background-color: black; */
+    height: 55%;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+   }
+   .card-img img{
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   }
+   
+   
+   .card-info {
+    padding-top: 10%;
+   }
+   
+   #svg {
+    width: 20px;
+    height: 20px;
+   }
+   
+   .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+   }
+   
+   /*Text*/
+   .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+   }
+   
+   .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   }
+   
+   /*Button*/
+   .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+   }
+   
+   /*Hover*/
+   .card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(61, 48, 162, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+   }
+   
+   .card-button:hover {
+    border: 1px solid #FFFB73;
+    background-color: #FFFB73;
+   }
+   
+/* -------------------------------PLANS------------------------------------- */
+
+
+   .plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 10px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 300px;
+    height: 420px;
+  }
+  
+  .plan strong {
+    font-weight: 600;
+    color: #425275;
+  }
+  
+  .plan .inner {
+    display: grid;
+    grid-template-rows: 20px 1fr 1fr auto;
+    align-items: center;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ecf0ff;
+    border-radius: 12px;
+    position: relative;
+    height: 85%;
+  }
+  
+  .plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #425475;
+  }
+  
+  .plan .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+  
+  .plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+  }
+  
+  .plan .title + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .info + * {
+    margin-top: 1rem;
+  }
+  
+  .plan .features {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .plan .features li + * {
+    margin-top: 0.75rem;
+  }
+  
+  .plan .features .icon {
+    background-color: #1FCAC5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  .plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .plan .features + * {
+    margin-top: 1.25rem;
+  }
+  
+  .plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: self-end;
+    justify-content: end;
+  }
+  
+  .plan .button {
+    background-color: #6558d3;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+  }
+  
+  .plan .button:hover, .plan .button:focus {
+    background-color: #4133B7;
+  }
+
+
+  @media (max-width: 1057px) {
+    .fundo-roxo {
+      height: 73rem;
+  }
+  .grid
+   {
+    margin-top: 10px;
+    justify-items: center;
+  }
+
+  .roxinho h1 {
+    font-size: 4rem;
+  }
+
+  .roxinho #calendario {
+    width: 50%;
+    height: 50%;
+}
+  }
+
+  .botao h2 {
+    font-size: 18px;
+  }
+
+  #carrinho #fechar {
+    cursor: pointer;
+    color: #6558d3;
+    padding-left: 5px;
+    font-size: 15px;
+  }
+
+
+
+/*responvidade do index */
+
+/*                 Desktop               */
+@media screen and (max-width: 1850px) {
+  .banner {
+    max-width: 100%; 
+            height: auto;    
+            display: block;  
+            margin-top: auto; 
+  }
+  .sidebar .menu {
+    padding: 15px;
+}
+}
+
+/*                Tablet,Ipad             */
+
+@media screen and (max-width: 1000px) {
+  aside {
+    padding-right: 115px;
+  }
+  aside h1{
+    padding-right: 85px;
+  }
+  .banner {
+    margin-top: 120px;
+  }
+  .botao {
+    padding-left: 70px;
+  }
+  #carrinho {
+    height: 50vh;
+  }
+  #carrinho .botao {
+    margin-left: -50px;
+  }
+  .remove-item {
+    margin-left: -10px;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  aside .sinalizacao {
+    margin-left: 30px;
+  }
+  .remove-item {
+    margin-left: -70px;
+  }
+  .botao h2 {
+    margin-top: 50px;
+  }
+  #carrinho {
+    height: 45vh;
+  }
+  #carrinho .botao {
+    margin-left: 15px;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .banner {
+    max-width: 100%; 
+    height: auto;    
+    display: block;  
+    margin-top: 125px; 
+  }
+  aside h1 {
+    text-align: left;
+    padding-right: 180px;
+  }
+  .botao h2{
+    font-size: 18px;
+    text-align: left;
+  }
+  .botao a{
+    font-size: 15px;
+  }
+}
+
+
+/*                Celular              */ 
+
+@media screen and (max-width: 650px) {
+  .card {
+    width: 180px;
+    padding: .2em;
+  }
+  aside {
+    padding-right: 105px;
+  }
+  aside .menu {
+    padding-right: 105px;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .fundo-roxo h1{
+    font-size: 40px;
+  }
+  .fundo-roxo p{
+    font-size: 20px;
+    padding: 20px;
+  }
+  #carrinho {
+    height: 65vh;
+  }
+  .botao h2 {
+    margin-top: 50px;
+    font-size: 1rem;
+    margin-left: -70px;
+  }
+  #carrinho .finalizar {
+    font-size: 1rem;
+    margin-left: -70px;
+    margin-bottom: 0;
+  }
+  .remove-item {
+    margin-left: -80px;
+  }
+  .info-carrinho {
+    padding-right: 20px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .card {
+    width: 150px;
+    padding: 0.1rem;
+  }
+  .fundo-roxo {
+    width: 400px;
+  }
+  .fundo-roxo h1{
+    font-size: 40px;
+  }
+    .fundo-roxo p{
+      font-size: 20px;
+      padding: 20px;
+    }  
+  header .nav1{
+      width: 412px;
+      height: auto;
+  }
+  header {
+      width: 412px;
+      height: auto;
+      margin: 0;
+  }
+  header .logo{
+      font-size: 25px;
+  }
+  .banner {
+         margin-top: 110px; 
+  }
+  #carrinho {
+    right: -22px;
+ }
+  .conta {
+    width: 90px;
+  }
+  aside {
+    padding-left: 20px;
+  }
+  aside .sinalizacao {
+    margin-left: -30px;
+  }
+  .produto-carrinho {
+    margin-left: -20px;
+  }
+  nav {
+    width: 500px;
+}
+  #carrinho {
+  height: 50vh;
+}
+  #carrinho img{
+    width: 80px;
+  }
+  .info-carrinho {
+    font-size: 12px;
+    width: 95px;
+  }
+  .qtdd-item {
+    font-size: 0.9rem;
+  }
+  .botao h2 {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    margin-left: -70px;
+  }
+  #carrinho .finalizar {
+    font-size: 0.8rem;
+    margin-left: -70px;
+    margin-bottom: 0;
+  }
+  #carrinho h1 {
+    font-size: 1.8rem;
+  }
+  #carrinho .botao {
+    margin-left: 50px;
+  }
+  .remove-item {
+    margin-left: -96px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .banner {
+    width: auto;
+    height: auto;    
+    margin-top: 118px;
+  } 
+  .fundo-roxo {
+    width: 370px;
+  }
+  .conta {
+    width: 80px;
+  }
+  aside {
+    padding-right: 150px;
+  }
+  aside .menu {
+    padding-right: 100px;
+  }
+  .card {
+    width: 145px;
+    padding: 0.1rem;
+  }
+  aside .sinalizacao {
+    margin-left: 28px;
+  }
+  aside .barradepesquisar {
+    padding-left: -250px;
+  }
+  #carrinho {
+    height: 62vh;
+  }
+  .botao h2 {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    margin-left: -70px;
+  }
+  #carrinho .finalizar {
+    font-size: 0.8rem;
+    margin-left: -70px;
+    margin-bottom: 0;
+  }
+  .remove-item {
+    margin-left: -100px;
+  }
+}
+
+
+
+@media screen and (max-width: 360px) {
+    header .nav1 {
+      width: 380px;
+    }
+    main {
+      width: 360px;
+    }
+    aside {
+      padding-right: 170px;
+    }
+    .barradepesquisar {
+      margin-right: 25px;
+    }
+    .conta {
+      width: 60px;
+    }
+    #carrinho h1 {
+      font-size: 1.8rem;
+    }
+    #carrinho {
+      height: 65vh;
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+  main {
+    width: 367px;
+  }
+  footer {
+    width: 367px;
+  }
+  aside {
+    padding-right: 180px;
+  }
+  #carrinho #fechar {
+    margin-left: -20px;
+  }
+  #carrinho .botao {
+    margin-left: -10px;
+  }
+}
